@@ -51,9 +51,9 @@ const Header = () => {
           <Button 
             size="lg" 
             className="bg-white text-textBlack text-[16px] font-semibold hover:bg-white hover:opacity-70"
-            onClick={handleLogout}
+            asChild
           >
-            Logout
+            <Link href='/auth/login'>Login</Link>
           </Button>
         <Button asChild size="lg" className="bg-primary text-textBlack text-[16px] font-semibold hover:bg-primary hover:opacity-70">
           <Link href="/auth/register">Register as an NGO</Link>
