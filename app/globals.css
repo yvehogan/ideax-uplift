@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+@layer utilities {
+    .shadow-custom {
+      box-shadow: 
+        0px 0px 0px 0px rgba(5, 15, 46, 0.10),
+        -6.62px 7.45px 22.35px 0px rgba(5, 15, 46, 0.10),
+        -27.31px 28.97px 39.73px 0px rgba(5, 15, 46, 0.09),
+        -62.07px 65.38px 53.8px 0px rgba(5, 15, 46, 0.05),
+        -110.07px 115.87px 63.73px 0px rgba(5, 15, 46, 0.01),
+        -172.14px 181.25px 70.35px 0px rgba(5, 15, 46, 0.00);
+    }
+  }
+  @layer utilities {
+    .custom-modal-shadow {
+      box-shadow: 0px 2px 20px 0px #00000040;
+    }
+  }
+
+.mobile-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.content-wrapper {
+  display: none; /* This ensures that the content is hidden when the warning is shown */
+}
+
+@media (min-width: 1024px) {
+  .content-wrapper {
+    display: block; /* Ensures content is displayed on non-mobile devices */
+  }
+}
