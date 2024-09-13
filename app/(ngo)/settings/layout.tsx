@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="mt-10">
       <h1 className="text-2xl font-bold mb-10">Settings</h1>
-      <Tabs defaultValue="notification">
+      <Tabs defaultValue="account">
         <TabsList className="flex w-[37%] mb-6">
           {tabs.map((tab) => (
             <TabsTrigger
